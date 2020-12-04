@@ -1,0 +1,62 @@
+.headline {
+  position: relative;
+  width: 1140px;
+  margin: auto;
+  margin-top: 84px;
+  display: flex;
+  padding-bottom: 77px;
+
+    &__content {
+      position: absolute;
+      z-index: 1;
+    }
+
+    &__title {
+      width: 754px;
+      height: 165px;
+      font-weight: bold;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+      color: #2B292D;
+      z-index: 1;
+      margin: 0;
+    }
+
+    &__description {
+      margin-top: 34px;
+      margin-bottom: 0;
+      height: 102px;
+      width: 456px;
+      font-size: 24px;
+      line-height: 34px;
+      z-index: 1;
+    }
+
+    &__banner {
+      position: relative;
+      right: -105px;
+      top: 0;
+      width: 796px;
+      height: 448px;
+      margin-left: auto;
+    }
+
+    &__actions {
+      margin-top: 58px;
+      display: flex;
+    }
+
+    &__learn-more-button {
+      margin-left: 10px;
+      background-color: #fff;
+      color: #3040C4;
+      width: 158px;
+      height: 48px;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 2px;
+      border: none;
+    }
+}

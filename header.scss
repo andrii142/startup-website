@@ -1,0 +1,71 @@
+
+.top-section {
+  background-color: #F3C6BD;
+  padding-top: 39px;
+}
+
+.header {
+  display: flex;
+  width: 1140px;
+  height: 62px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 25px;
+    color: #2B292D;
+    opacity: 0.6;
+  }
+}
+
+.navigation {
+  margin-left: auto;
+  margin-top: 7px;
+  margin-right: 75px;
+
+  &__item {
+    color: #2B292D;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 18px;
+    margin-right: 50px;
+
+    &_selected {
+      font-weight: 700;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__arrow {
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+    margin-left: 11px;
+  }
+}

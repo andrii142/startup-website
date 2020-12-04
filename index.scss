@@ -1,0 +1,32 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+@import 'common.scss';
+
+@import 'header.scss';
+
+@import "headline.scss";
+
+@import 'about.scss';
+
+@import 'customers.scss';
+
+@import 'features.scss';
+
+@import 'footer.scss';
