@@ -1,6 +1,9 @@
+
+@import 'variables.scss';
+
 .order {
   padding: 50px 15px;
-  background-color: #F4F5F7;
+  background-color: $color-light;
 
   display: flex;
   flex-direction: column;
@@ -29,7 +32,7 @@
 
   &__title {
     text-align: center;
-    font-weight: 700;
+    font-weight: $bold-type;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.357143px;
@@ -56,8 +59,8 @@
 
   &__email {
     margin-top: 40px;
-    background-color: #FFFFFF;
-    border: 1px solid rgba(43, 41, 45, 0.2);
+    background-color: $color-white;
+    border: 1px solid $border-color-middle-grey;
     border-radius: 2px;
     height: 48px;
     width: 100%;
@@ -70,7 +73,7 @@
     }
 
     &::placeholder {
-      color: #2B292D;
+      color: $text-color-dark;
     }
   }
 
@@ -91,10 +94,10 @@
   &__terms {
     font-size: 14px;
     line-height: 22px;
-    color: rgba(43, 41, 45, 0.6);
+    color: $text-color-dark-grey;
   }
 
   &__terms-link {
-    color: #3142C6;
+    color: $text-color-blue;
   }
 }

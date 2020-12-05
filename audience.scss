@@ -1,6 +1,9 @@
+
+@import 'variables.scss';
+
 .audience {
   padding: 50px 15px;
-  background-color: rgba(0, 161, 198, 0.07);
+  background-color: $color-grey;
 
   @include for-large-up {
     padding: 108px 130px 110px 130px;
@@ -15,10 +18,10 @@
   &__subtitle {
     margin-bottom: 17px;
     text-align: center;
-    font-weight: 700;
+    font-weight: $bold-type;
     font-size: 22px;
     line-height: 34px;
-    color: #2B292D;
+    color: $text-color-dark;
 
     @include for-large-up {
       width: 168px;
@@ -30,11 +33,11 @@
     margin: 0;
     margin-bottom: 18px;
     text-align: center;
-    font-weight: bold;
+    font-weight: $bold-type;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.357143px;
-    color: #2B292D;
+    color: $text-color-dark;
 
     @include for-large-up {
       width: 555px;
@@ -50,7 +53,7 @@
     text-align: center;
     font-size: 24px;
     line-height: 34px;
-    color: #2B292D;
+    color: $text-color-dark;
 
     @include for-large-up {
       width: 555px;
@@ -66,12 +69,12 @@
 
   &__action-button {
     margin-bottom: 40px;
-    color: #000000;
-    background-color: #fff;
+    color: $color-black;
+    background-color: $color-white;
     width: 160px;
     height: 48px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $bold-type;
     border: none;
     border-radius: 2px;
 
@@ -105,7 +108,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), $color-white;
   background-blend-mode: overlay, normal;
   border-radius: 8px;
 
@@ -124,8 +127,8 @@
   }
 
   &:hover {
-    background-color: #3141C5;
-    color: #FFFFFF;
+    background-color: $color-dark-blue;
+    color: $color-white;
   }
 
   &__image {
@@ -133,7 +136,7 @@
   }
 
   &__name {
-    font-weight: 700;
+    font-weight: $bold-type;
     font-size: 22px;
     line-height: 28px;
     margin-top: 22px;

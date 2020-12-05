@@ -1,7 +1,10 @@
+
+@import 'variables.scss';
+
 .about {
   padding: 46px 15px;
   width: 100%;
-  background-color: #F4F5F7;
+  background-color: $color-light;
 
   @include for-large-up {
     display: flex;
@@ -16,7 +19,7 @@
   }
 
   &__title {
-    font-weight: bold;
+    font-weight: $bold-type;
     font-size: 22px;
     line-height: 32px;
     margin: 0;

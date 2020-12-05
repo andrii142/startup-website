@@ -1,9 +1,11 @@
 
+@import 'variables.scss';
+
 .top-section {
-  background-color: #F3C6BD;
+  background-color: $color-coral;
 
   @include for-large-up {
-    background-color: #F3C6BD;
+    background-color: $color-coral;
     padding-top: 39px;
   }
 }
@@ -13,7 +15,7 @@
   align-items: center;
   height: 64px;
   width: 100%;
-  background-color: #fff;
+  background-color: $color-white;
   padding-left: 15px;
 
   @include for-large-up {
@@ -21,7 +23,7 @@
     width: 1140px;
     height: 62px;
     margin: auto;
-    background-color: #F3C6BD;
+    background-color: $color-coral;
   }
 
   &__button {
@@ -36,7 +38,7 @@
     width: 58px;
     height: 100%;
     border: none;
-    border-left: 1px solid #00000026;
+    border-left: 1px solid $border-color-grey;
     margin-left: auto;
     background-color: transparent;
 
@@ -77,7 +79,7 @@
   &__name {
     font-size: 20px;
     line-height: 25px;
-    font-weight: 700;
+    font-weight: $bold-type;
   }
 
   &__description {
@@ -86,7 +88,7 @@
     @include for-large-up {
       font-size: 18px;
       line-height: 25px;
-      color: #2B292D;
+      color: $text-color-dark;
       opacity: 0.6;
     }
   }
@@ -103,14 +105,14 @@
   }
 
   &__item {
-    color: #2B292D;
+    color: $text-color-dark;
     text-decoration: none;
     line-height: 25px;
     font-size: 18px;
     margin-right: 50px;
 
     &_selected {
-      font-weight: 700;
+      font-weight: $bold-type;
     }
   }
 
