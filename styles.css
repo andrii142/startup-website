@@ -492,10 +492,8 @@ html {
   background-color: #3141C5;
   color: #FFFFFF;
 }
-@__image {
-  .user-card {
-    margin-top: 22px;
-  }
+.user-card__image {
+  margin-top: 22px;
 }
 .user-card__name {
   font-weight: 700;
