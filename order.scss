@@ -2,8 +2,13 @@
   padding: 50px 15px;
   background-color: #F4F5F7;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include for-large-up {
     padding: 73px 0 72px 0;
+    flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -23,11 +28,16 @@
   }
 
   &__title {
+    text-align: center;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.357143px;
     margin-top: 40px;
+
+    @include for-large-up {
+      text-align: left;
+    }
   }
 
   &__text {

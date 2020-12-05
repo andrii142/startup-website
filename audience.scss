@@ -1,0 +1,84 @@
+.audience {
+  padding: 50px 15px;
+  background-color: rgba(0, 161, 198, 0.07);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 17px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__button {
+    margin-bottom: 12px;
+    @include for-large-down {
+      width: 100%;
+    }
+  }
+
+  &__action-button {
+    margin-bottom: 40px;
+    color: #000000;
+    background-color: #fff;
+
+    @include for-large-down {
+      width: 100%;
+    }
+  }
+
+  &__card {
+    margin-bottom: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    background-blend-mode: overlay, normal;
+    border-radius: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-activ {
+      background-color: #3141C5;
+      color: #FFFFFF;
+    }
+  }
+
+  &__card-image {
+    margin-top: 22px;
+  }
+
+  &__card-name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 22px;
+  }
+}
