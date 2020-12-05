@@ -1,9 +1,12 @@
 .features {
   display: flex;
   position: relative;
+  height: 602px;
+  margin-bottom: 103px;
 
   @include for-large-down {
     display: none;
+
   }
 
   &__content {

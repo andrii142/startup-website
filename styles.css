@@ -9,18 +9,17 @@ html {
 
 .page {
   width: 100%;
-  overflow-x: hidden;
 }
-
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1400px) {
   .page {
     display: flex;
     flex-direction: column;
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
     min-height: 100vh;
   }
 }
+
 .action__button {
   background-color: #3040C4;
   color: #fff;
@@ -364,6 +363,8 @@ html {
 .features {
   display: flex;
   position: relative;
+  height: 602px;
+  margin-bottom: 103px;
 }
 @media screen and (max-width: 1399px) {
   .features {
@@ -493,6 +494,92 @@ html {
   color: rgba(43, 41, 45, 0.6);
   margin-top: 20px;
   max-width: 100%;
+}
+
+.order {
+  padding: 50px 15px;
+  background-color: #F4F5F7;
+}
+@media screen and (min-width: 1400px) {
+  .order {
+    padding: 73px 0 72px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.order__details {
+  max-width: 555px;
+}
+.order__illustration {
+  max-width: 200px;
+}
+@media screen and (min-width: 1400px) {
+  .order__illustration {
+    max-width: 269px;
+    margin-right: 121px;
+  }
+}
+.order__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.357143px;
+  margin-top: 40px;
+}
+.order__text {
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0;
+  margin-top: 18px;
+}
+@media screen and (min-width: 1400px) {
+  .order__form {
+    display: flex;
+    margin-top: 26px;
+  }
+}
+.order__email {
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 2px;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 13px;
+}
+@media screen and (min-width: 1400px) {
+  .order__email {
+    margin-top: 0;
+  }
+}
+.order__email::placeholder {
+  color: #2B292D;
+}
+.order__button {
+  margin-top: 12px;
+}
+@media screen and (max-width: 1399px) {
+  .order__button {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .order__button {
+    margin-top: 0;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+}
+.order__terms {
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.order__terms-link {
+  color: #3142C6;
 }
 
 .logo-vertical {
