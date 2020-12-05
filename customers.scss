@@ -35,6 +35,7 @@
     @include for-large-up {
       flex: 1;
       justify-content: space-around;
+      border: none;
     }
 
     &:last-child {

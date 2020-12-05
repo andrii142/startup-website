@@ -350,6 +350,7 @@ html {
   .customers__item {
     flex: 1;
     justify-content: space-around;
+    border: none;
   }
 }
 .customers__item:last-child {
@@ -364,6 +365,11 @@ html {
   padding: 50px 15px;
   background-color: rgba(0, 161, 198, 0.07);
 }
+@media screen and (min-width: 1400px) {
+  .audience {
+    padding: 108px 130px 110px 130px;
+  }
+}
 .audience__content {
   display: flex;
   flex-direction: column;
@@ -376,6 +382,12 @@ html {
   font-size: 22px;
   line-height: 34px;
 }
+@media screen and (min-width: 1400px) {
+  .audience__subtitle {
+    width: 168px;
+    margin-bottom: 24px;
+  }
+}
 .audience__title {
   margin: 0;
   margin-bottom: 18px;
@@ -385,6 +397,14 @@ html {
   line-height: 40px;
   letter-spacing: -0.357143px;
 }
+@media screen and (min-width: 1400px) {
+  .audience__title {
+    width: 555px;
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 30px;
+  }
+}
 .audience__description {
   margin: 0;
   margin-bottom: 30px;
@@ -392,12 +412,29 @@ html {
   font-size: 24px;
   line-height: 34px;
 }
+@media screen and (min-width: 1400px) {
+  .audience__description {
+    width: 555px;
+    margin-bottom: 34px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .audience__buttons {
+    display: flex;
+  }
+}
 .audience__button {
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1399px) {
   .audience__button {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .audience__button {
+    margin-bottom: 111px;
+    margin-right: 10px;
   }
 }
 .audience__action-button {
@@ -410,6 +447,16 @@ html {
     width: 100%;
   }
 }
+@media screen and (min-width: 1400px) {
+  .audience__action-button {
+    margin-bottom: 111px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .audience__illustration {
+    display: flex;
+  }
+}
 .audience__card {
   margin-bottom: 15px;
   height: 300px;
@@ -420,8 +467,20 @@ html {
   background-blend-mode: overlay, normal;
   border-radius: 8px;
 }
+@media screen and (min-width: 1400px) {
+  .audience__card {
+    margin-bottom: 0;
+    width: 262px;
+    margin-right: 30px;
+  }
+}
 .audience__card:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 1400px) {
+  .audience__card:last-child {
+    margin-right: 0;
+  }
 }
 .audience__card-activ {
   background-color: #3141C5;
