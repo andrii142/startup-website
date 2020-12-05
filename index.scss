@@ -1,4 +1,5 @@
 
+@import 'breakpoints.scss';
 
 * {
   box-sizing: border-box;
@@ -10,11 +11,18 @@ html {
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 400px){
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+  }
 }
 
 @import 'common.scss';
@@ -29,4 +37,7 @@ html {
 
 @import 'features.scss';
 
+@import 'tips.scss';
+
 @import 'footer.scss';
+

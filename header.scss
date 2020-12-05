@@ -1,23 +1,71 @@
 
 .top-section {
   background-color: #F3C6BD;
-  padding-top: 39px;
+
+  @include for-large-up {
+    background-color: #F3C6BD;
+    padding-top: 39px;
+  }
 }
 
 .header {
   display: flex;
-  width: 1140px;
-  height: 62px;
-  margin: auto;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
+  padding-left: 15px;
+
+  @include for-large-up {
+    display: flex;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+    background-color: #F3C6BD;
+  }
+
+  &__button {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+
+  &__menu-button {
+    width: 58px;
+    height: 100%;
+    border: none;
+    border-left: 1px solid #00000026;
+    margin-left: auto;
+    background-color: transparent;
+
+    @include for-large-up {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    width: 18px;
+    height: 13px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+    display: inline-block;
+  }
 }
 
 .logo {
   display: flex;
 
   &__image {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
+    width: 48px;
+    height: 48px;
+    margin-right: 13px;
+
+    @include for-large-up {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
   }
 
   &__text {
@@ -33,17 +81,26 @@
   }
 
   &__description {
-    font-size: 18px;
-    line-height: 25px;
-    color: #2B292D;
-    opacity: 0.6;
+    display: none;
+
+    @include for-large-up {
+      font-size: 18px;
+      line-height: 25px;
+      color: #2B292D;
+      opacity: 0.6;
+    }
   }
 }
 
 .navigation {
-  margin-left: auto;
-  margin-top: 7px;
-  margin-right: 75px;
+  display: none;
+
+  @include for-large-up {
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
+  }
 
   &__item {
     color: #2B292D;

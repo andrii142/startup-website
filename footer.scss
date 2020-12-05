@@ -1,31 +1,82 @@
+.logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-large-up {
+    display: none;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(43, 41, 45, 0.6);
+  }
+}
 
 .footer {
   display: flex;
   flex-direction: column;
   margin-top: auto;
 
-    &__line {
-      border-top: 1px solid #2B292D;
-      width: 100%;
-      opacity: 0.1;
+  &__line {
+    border-top: 1px solid #2B292D;
+    width: 100%;
+    opacity: 0.1;
+    margin: 0;
+    margin-top: 40px;
+
+    @include for-large-up {
       margin: 0;
     }
+  }
 
-    &__description {
-      width: 360px;
-      line-height: 18px;
-      font-size: 18px;
-      margin-top: 26px;
-      color: rgba(43, 41, 45, 0.6);
-      /* opacity: 0.6; */
+  &__description {
+    display: none;
+    width: 360px;
+    line-height: 18px;
+    font-size: 18px;
+    margin-top: 26px;
+    color: rgba(43, 41, 45, 0.6);
+
+    @include for-large-up {
+      display: block;
     }
+  }
+
+  .logo {
+    @include for-large-down {
+      display: none;
+    }
+  }
 }
 
 .footer-navigation {
   display: flex;
-  width: 1140px;
-  height: 338px;
-  margin: 0 auto;
+  flex-direction: column;
+  margin: 0;
+
+  @include for-large-up {
+    display: flex;
+    width: 1140px;
+    height: 338px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
 }
 
 .about-company {
@@ -33,69 +84,111 @@
 }
 
 .downloads {
-  margin-top: 25px;
+  margin: 25px 15px 0 15px;
+  display: flex;
+  justify-content: center;
 
-    &__item {
-      margin-right: 10px;
-    }
+  @include for-large-up {
+    justify-content: left;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
 }
 
 .additional-navigation {
   display: flex;
-  margin-top: 60px;
-  margin-left: auto;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
 
-    &__column {
+  @include for-large-up {
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: auto;
+  }
+
+  &__column {
+    margin-top: 30px;
+
+    @include for-large-up {
+      margin-top: 0;
       margin-right: 29px;
     }
+  }
 }
 
 .nav-links {
   width: 265px;
 
-    &__title {
-      font-weight: bolder;
-      font-size: 22px;
-      line-height: 28px;
-      color: #2B292D;
-      margin: 0;
-    }
+  &__title {
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+    margin: 0;
+  }
 
-    &__list {
-      list-style-type: none;
-      font-size: 18px;
-      line-height: 30px;
-      color: rgba(43, 41, 45, 0.6);
-      padding: 0;
-      margin: 0;
-      margin-top: 18px;
-    }
+  &__list {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+  }
 }
 
 .footer-links {
   display: flex;
-  align-items: center;
-  width: 1140px;
-  height: 50px;
-  margin: 0 auto;
+  flex-direction: column;
+  margin-left: 15px;
+
+  @include for-large-up {
+    width: 1140px;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    height: 50px;
+  }
 }
 
 .terms {
-  line-height: 50px;
+  line-height: 22px;
   font-size: 14px;
+  margin-top: 30px;
 
-    &__items {
-      text-decoration: none;
-      color: rgba(43, 41, 45, 0.6);
-      opacity: 0.6;
-      margin-right: 22px;
-    }
+  @include for-large-up {
+    line-height: 50px;
+    margin-top: 0;
+  }
+
+  &__items {
+    text-decoration: none;
+    color: rgba(43, 41, 45, 0.6);
+    opacity: 0.6;
+    margin-right: 22px;
+  }
 }
 
 .social-links {
-  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 23px;
 
-    &__item {
-      margin-left: 20px;
+  @include for-large-up {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
     }
+  }
 }

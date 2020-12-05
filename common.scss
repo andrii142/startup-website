@@ -8,3 +8,15 @@
   border: none;
   border-radius: 2px;
 }
+
+.hide_desctop {
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.hide_mobile {
+  @include for-large-down {
+    display: none;
+  }
+}
