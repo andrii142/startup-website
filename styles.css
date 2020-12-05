@@ -456,12 +456,14 @@ html {
     margin-right: 10px;
   }
 }
+
 @media screen and (min-width: 1400px) {
-  .audience__illustration {
+  .user-illustration {
     display: flex;
   }
 }
-.audience__card {
+
+.user-card {
   margin-bottom: 15px;
   height: 300px;
   display: flex;
@@ -472,28 +474,30 @@ html {
   border-radius: 8px;
 }
 @media screen and (min-width: 1400px) {
-  .audience__card {
+  .user-card {
     margin-bottom: 0;
     width: 262px;
     margin-right: 30px;
   }
 }
-.audience__card:last-child {
+.user-card:last-child {
   margin-bottom: 0;
 }
 @media screen and (min-width: 1400px) {
-  .audience__card:last-child {
+  .user-card:last-child {
     margin-right: 0;
   }
 }
-.audience__card:hover {
+.user-card:hover {
   background-color: #3141C5;
   color: #FFFFFF;
 }
-.audience__card-image {
-  margin-top: 22px;
+@__image {
+  .user-card {
+    margin-top: 22px;
+  }
 }
-.audience__card-name {
+.user-card__name {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
