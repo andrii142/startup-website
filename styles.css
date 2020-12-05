@@ -196,6 +196,7 @@ html {
   line-height: 50px;
   letter-spacing: -0.3125px;
   margin: 0;
+  color: #2B292D;
 }
 @media screen and (min-width: 1400px) {
   .headline__title {
@@ -214,6 +215,7 @@ html {
   margin-bottom: 0;
   font-size: 24px;
   line-height: 34px;
+  color: #2B292D;
 }
 @media screen and (min-width: 1400px) {
   .headline__description {
@@ -381,6 +383,7 @@ html {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
+  color: #2B292D;
 }
 @media screen and (min-width: 1400px) {
   .audience__subtitle {
@@ -396,6 +399,7 @@ html {
   font-size: 40px;
   line-height: 40px;
   letter-spacing: -0.357143px;
+  color: #2B292D;
 }
 @media screen and (min-width: 1400px) {
   .audience__title {
@@ -411,6 +415,7 @@ html {
   text-align: center;
   font-size: 24px;
   line-height: 34px;
+  color: #2B292D;
 }
 @media screen and (min-width: 1400px) {
   .audience__description {
@@ -423,33 +428,32 @@ html {
     display: flex;
   }
 }
-.audience__button {
-  margin-bottom: 12px;
+.audience__action-button {
+  margin-bottom: 40px;
+  color: #000000;
+  background-color: #fff;
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+}
+@media screen and (max-width: 1399px) {
+  .audience__action-button {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1399px) {
   .audience__button {
     width: 100%;
+    margin-bottom: 12px;
   }
 }
 @media screen and (min-width: 1400px) {
   .audience__button {
     margin-bottom: 111px;
     margin-right: 10px;
-  }
-}
-.audience__action-button {
-  margin-bottom: 40px;
-  color: #000000;
-  background-color: #fff;
-}
-@media screen and (max-width: 1399px) {
-  .audience__action-button {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .audience__action-button {
-    margin-bottom: 111px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -482,7 +486,7 @@ html {
     margin-right: 0;
   }
 }
-.audience__card-activ {
+.audience__card:hover {
   background-color: #3141C5;
   color: #FFFFFF;
 }

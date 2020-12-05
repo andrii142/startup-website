@@ -18,6 +18,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
+    color: #2B292D;
 
     @include for-large-up {
       width: 168px;
@@ -33,6 +34,7 @@
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.357143px;
+    color: #2B292D;
 
     @include for-large-up {
       width: 555px;
@@ -48,26 +50,40 @@
     text-align: center;
     font-size: 24px;
     line-height: 34px;
+    color: #2B292D;
 
     @include for-large-up {
-
       width: 555px;
       margin-bottom: 34px;
     }
   }
 
   &__buttons {
-
     @include for-large-up {
       display: flex;
     }
   }
 
-  &__button {
-    margin-bottom: 12px;
+  &__action-button {
+    margin-bottom: 40px;
+    color: #000000;
+    background-color: #fff;
+    width: 160px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
 
     @include for-large-down {
       width: 100%;
+    }
+  }
+
+  &__button {
+    @include for-large-down {
+      width: 100%;
+      margin-bottom: 12px;
     }
 
     @include for-large-up {
@@ -76,22 +92,7 @@
     }
   }
 
-  &__action-button {
-    margin-bottom: 40px;
-    color: #000000;
-    background-color: #fff;
-
-    @include for-large-down {
-      width: 100%;
-    }
-
-    @include for-large-up {
-      margin-bottom: 111px;
-    }
-  }
-
   &__illustration {
-    
     @include for-large-up {
       display: flex;
     }
@@ -121,7 +122,7 @@
       }
     }
 
-    &-activ {
+    &:hover {
       background-color: #3141C5;
       color: #FFFFFF;
     }
