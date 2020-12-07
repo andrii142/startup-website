@@ -1,0 +1,68 @@
+.communication {
+  padding: 50px 15px;
+
+  &__content-text {}
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #0189D1;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    color: #2B292D;
+    margin: 17px 0 18px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-bottom: 40px;
+  }
+
+  &__illustration {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__image {
+    max-width: 100%;
+
+    &-text {
+      margin-top: 17px;
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(43, 41, 45, 0.6);
+    }
+  }
+
+  &__line {
+    width: 150px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+
+  &__main-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #2B292D;
+    margin-top: 33px;
+  }
+
+  &__click {
+    font-weight: 700;
+    color: #3142C6;
+  }
+}
