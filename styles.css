@@ -375,6 +375,9 @@ html {
     padding: 0;
   }
 }
+.inbox__banner {
+  display: flex;
+}
 @media screen and (min-width: 1400px) {
   .inbox__banner {
     display: flex;
@@ -465,7 +468,8 @@ html {
 }
 
 .review {
-  width: 290px;
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   border-bottom: 4px solid #0185D0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;

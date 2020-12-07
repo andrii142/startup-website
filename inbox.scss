@@ -10,6 +10,8 @@
   }
 
   &__banner {
+    display: flex;
+
     @include for-large-up {
       display: flex;
       flex-direction: column;
@@ -102,7 +104,8 @@
 }
 
 .review {
-  width: 290px;
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   border-bottom: 4px solid #0185D0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
